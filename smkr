@@ -1,0 +1,3 @@
+#!/bin/sh
+
+clear && echo "enter the name of the script you want to make." && read a && clear && echo "enter the shell you want to script in" && read b && clear && touch $a && chmod +x $a && echo "#!/bin/$b" >> $a && vim $a || echo "you dont have vim installed or something is wtong with the script."

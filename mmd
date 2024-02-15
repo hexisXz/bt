@@ -1,0 +1,8 @@
+#!/bin/sh
+
+clear && echo "mount or unmount (m/um)" && read imp && clear
+
+[ "$imp" = "m" ] && lsblk && echo "----------------------------------" && echo "enter the device you want to mount." && read a && echo "folder 1 or 2" && read b && sudo mount /dev/$a /media/drives/drive$b 
+
+
+[ "$imp" = "um" ] && lsblk && echo "----------------------------------" && echo "enter the device you want to unmount." && read c && echo "folder 1 or 2" && read d && sudo umount /dev/$c /media/drives/drive$d 

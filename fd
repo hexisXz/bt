@@ -1,0 +1,4 @@
+#!/bin/sh
+
+
+e=$(ls -p ./ | grep -v / | fzf -m --prompt delete:) && clear && cat $e && echo "      " && echo "do you want to delete file $e (y/n)" && read b && [ "$b" = "y" ] && rm $e || exit 1

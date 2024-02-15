@@ -1,0 +1,3 @@
+#!/bin/sh
+
+e=$(find ~ | fzf -m --prompt file:) && vim $e 

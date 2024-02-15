@@ -1,0 +1,4 @@
+#!/bin/sh
+
+f=$(find ~/Pictures -name '*' -exec file {} \; | grep -o -P '^.+: \w+ image' | awk -F':' '{print $1}' | fzf -m --prompt image: --height=15) && qiv -t $f &
+
