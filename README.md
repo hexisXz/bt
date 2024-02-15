@@ -37,5 +37,5 @@ smkr is a script that makes an executable script based on user input
 to install bt you first need qiv and fzf installed on your system. Then run this script
 
 ``` sh
-curl -L -O "https://github.com/hexisXz/setwall.git" && bash install.sh
+curl -L -O "https://raw.githubusercontent.com/hexisXz/bt/main/install.sh" && bash install.sh
 ```
